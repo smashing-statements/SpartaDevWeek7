@@ -71,7 +71,7 @@ namespace RazorTutorialNewApp.Pages.Movies
 
         private bool MovieExists(int id)
         {
-          return _context.Movie.Any(e => e.ID == id);
+            return (_context.Movie?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }

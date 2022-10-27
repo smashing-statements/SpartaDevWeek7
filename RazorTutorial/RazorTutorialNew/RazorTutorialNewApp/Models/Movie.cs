@@ -8,6 +8,7 @@ namespace RazorTutorialNewApp.Models
         public int ID { get; set; }
         public string Title { get; set; } = string.Empty;
 
+        //This allows data to be displayed correctly
         [Display(Name = "Release Date")]
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
