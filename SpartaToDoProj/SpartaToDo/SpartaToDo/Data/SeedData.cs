@@ -6,7 +6,7 @@ namespace SpartaToDo.Data
     public class SeedData
     {
 
-        public void Initialize(IServiceProvider serviceProvider)
+        public static void Initialize(IServiceProvider serviceProvider)
         {
             using (var db = new SpartaToDoContext(serviceProvider.GetRequiredService<DbContextOptions<SpartaToDoContext>>()))
             {
